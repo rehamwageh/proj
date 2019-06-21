@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            tip calculator
+        </title>
+        <script src="calc.js">
+         </script>
+    </head>
+    <body>
+        <form  method="POST">
+    Bill amount: 
+<input  type="text" name="bill total" id="bill" onchange="valid1()" ><br><br>
+ Service satisfaction: <select name="service satisfaction" id="service" onchange="valid2()">
+    <option value="0"> select one</option>
+ <option value="4">Excellent</option>
+<option value="3" >Very good</option>
+ <option value="2">good</option>
+ <option value="1">bad</option>
+</select><br><br>
+ 
+ Number of pepole :  <input type="text" name="number" id="share" onchange="valid3()" >
+ </form>
+ <button  value="calculate" id="calc" onclick="calc(bill_amount, service, pepole)">calculate</button><br><br>
+<label for="output" id="result"></label>
+
+       
+    </body>
+</html>
